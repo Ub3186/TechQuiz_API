@@ -128,7 +128,7 @@ def reset_password_html():
                 redirect: 'follow'
             };
 
-            fetch("http://techquiz.us-east-1.elasticbeanstalk.com/update_password", requestOptions)
+            fetch("https://techquiz-api.herokuapp.com/update_password", requestOptions)
                 .then(response => response.json())
                 .then(result => {
                     if(result.error){
